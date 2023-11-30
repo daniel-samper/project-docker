@@ -24,11 +24,13 @@ function primos($limite)
     }
 
     //Muestro la lista de los primos 
+    /*
     echo "Primos: ";
     for ($n = 2; $n < $limite; $n++) {
         if ($numeros[$n]) {
             echo $n . " ";
         }
     }
+    */
     return $numeros;
 }
