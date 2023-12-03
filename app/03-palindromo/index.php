@@ -9,14 +9,16 @@
 
         <?php
             $start = microtime(true);
-            include "02-primos/primos2.php";
-            //echo '<pre>'; print_r(primos(10000)); echo '</pre>';
-
             
-            $numbers = primos(100000);
-            foreach($numbers as $key => $value){
-                if($value){
-                    echo"$key"."\n";
+            $n1 = 1;
+            $n2 = 100000;
+
+            for($i = $n1; $i <= $n2; $i++) {
+                $number = (string)$i;
+                $reverse = strrev($number);
+
+                if($number == $reverse){
+                    echo $number." ";
                 }
             }
             
